@@ -1,0 +1,57 @@
+
+Clover EFI installer log - Sun Jan 19 16:01:01 EET 2020
+Installer version: v2.5k r5103 EFI bootloader
+======================================================
+/dev/disk0 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *128.0 GB   disk0
+   1:                        EFI EFI                     209.7 MB   disk0s1
+   2:                 Apple_APFS Container disk2         127.8 GB   disk0s2
+
+/dev/disk1 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *480.1 GB   disk1
+   1:         Microsoft Reserved                         134.2 MB   disk1s1
+   2:           Windows Recovery                         2.0 GB     disk1s2
+   3:                        EFI NO NAME                 393.5 MB   disk1s3
+   4:       Microsoft Basic Data                         477.6 GB   disk1s4
+
+/dev/disk2 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +127.8 GB   disk2
+                                 Physical Store disk0s2
+   1:                APFS Volume HomeOS - Data           73.2 GB    disk2s1
+   2:                APFS Volume Preboot                 87.2 MB    disk2s2
+   3:                APFS Volume Recovery                528.5 MB   disk2s3
+   4:                APFS Volume VM                      3.2 GB     disk2s4
+   5:                APFS Volume HomeOS                  10.9 GB    disk2s5
+
+/dev/disk3 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *1.0 TB     disk3
+   1:                        EFI EFI                     209.7 MB   disk3s1
+   2:       Microsoft Basic Data ST-HDD-700GB-NTSFS      699.9 GB   disk3s2
+   3:       Microsoft Basic Data ST-HDD-300G             300.1 GB   disk3s3
+
+Target volume /Volumes/HomeOS on disk2 is APFS on physical store disk0s2
+======================================================
+Backing up EFI files
+
+Backing up /Volumes/HomeOS/EFIROOTDIR/EFI folder to /Volumes/HomeOS/EFI-Backups/r5103/2020-01-19-16h01/EFI
+======================================================
+Installing BootSectors/BootLoader
+
+Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /
+Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /
+
+Removing UEFI/SMCHelper.efi driver because VirtualSMC driver present
+======================================================
+Installing RC Scripts
+
+Installing RC scripts on target volume '/'
+
+Activating /etc/rc.boot.d/70.disable_sleep_proxy_client.local rc script
+
+======================================================
+=========== Clover EFI Installation Finish ===========
+======================================================
